@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".DetailShikigamiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ing_item_photo"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@color/cardview_dark_background"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ing_item_photo"
+                android:layout_toEndOf="@+id/ing_item_photo"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shikigami_name"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_item_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Shikigami Role" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextContent"
+            android:id="@+id/tv_bio"
+            android:text="coba"
+            android:lineSpacingMultiplier="1"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            style="@style/TextContent.Black"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:text="Stat Rating"
+            />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="@dimen/activity_horizontal_margin"
+           android:layout_marginBottom="16dp">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+
+               <TextView
+                   style="@style/TextSpec.Field"
+                   android:text="@string/attack"
+                   />
+               <TextView
+                   style="@style/TextSpec.Value"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:id="@+id/tv_attack"
+                   android:textSize="14dp"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+
+               <TextView
+
+                   style="@style/TextSpec.Field"
+                   android:text="@string/hp"
+                   />
+               <TextView
+                   style="@style/TextSpec.Value"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:id="@+id/tv_hp"
+                   android:textSize="14dp"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+
+               <TextView
+                   style="@style/TextSpec.Field"
+                   android:text="@string/defense"
+                   />
+               <TextView
+                   style="@style/TextSpec.Value"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:id="@+id/tv_defense"
+                   android:textSize="14dp"/>
+           </TableRow>
+       </TableLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

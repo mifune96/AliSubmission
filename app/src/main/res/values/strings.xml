@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ali Submission</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="shikigami_name">Shikigami Name</string>
+    <string name="attack">Attack</string>
+    <string name="hp">Hp</string>
+    <string name="defense">Defense</string>
+</resources>
